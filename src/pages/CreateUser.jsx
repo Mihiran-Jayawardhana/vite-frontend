@@ -31,7 +31,6 @@ const CreateUser = () => {
       })
       .catch((error) => {
         setLoading(false);
-        // alert("Error in saving user,check console for more info");
         enqueueSnackbar("Error!", { variant: "error" });
         console.log(error);
       });
